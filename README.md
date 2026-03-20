@@ -10,7 +10,9 @@ It includes setting up an EC2 instance, configuring a production-ready web serve
 
 Hosted on an AWS EC2 instance using Nginx
 
-Accessible via public IP
+Live: http://13.60.35.204
+
+Public access via browser
 
 ---
 
