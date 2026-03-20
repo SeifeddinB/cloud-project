@@ -1,11 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Seif Cloud Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seif Cloud Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at top left, rgba(59,130,246,0.25), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(168,85,247,0.25), transparent 30%),
+        linear-gradient(135deg, #0f172a 0%, #111827 45%, #1e293b 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px;
+      padding: 48px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(59,130,246,0.18);
+      border: 1px solid rgba(96,165,250,0.35);
+      color: #bfdbfe;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.05;
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+
+    .highlight {
+      background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 700px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .box h3 {
+      font-size: 15px;
+      color: #93c5fd;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .box p {
+      font-size: 18px;
+      color: #f8fafc;
+      line-height: 1.5;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-left {
+      color: #94a3b8;
+      font-size: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 28px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>version 2 🔥</h1>
-    <p>Detta är en ny version</p>
+  <main class="card">
+    <div class="badge">AWS EC2 • Nginx • GitHub Deploy</div>
+
+    <h1>Seif’s <span class="highlight">Cloud Project</span> 🚀</h1>
+
+    <p class="subtitle">
+      Detta är min första riktiga live-hemsida hostad på AWS EC2 med Nginx och uppdaterad via GitHub.
+      Projektet visar att jag kan sätta upp server, deploya kod och jobba praktiskt med cloud.
+    </p>
+
+    <section class="grid">
+      <div class="box">
+        <h3>Hosting</h3>
+        <p>AWS EC2 server med live deployment</p>
+      </div>
+
+      <div class="box">
+        <h3>Web Server</h3>
+        <p>Nginx installerad och konfigurerad</p>
+      </div>
+
+      <div class="box">
+        <h3>Version Control</h3>
+        <p>GitHub repo kopplat till servern</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footer-left">
+        Byggd av Seifeddin B • Första steg mot Cloud / DevOps
+      </div>
+      <a class="button" href="https://github.com/SeifeddinB/cloud-project" target="_blank">Visa GitHub</a>
+    </div>
+  </main>
 </body>
 </html>
